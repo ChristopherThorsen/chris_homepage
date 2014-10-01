@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='./js/libs/jquery-1.10.2.js'></script>
+    <script src='./js/libs/handlebars-1.1.2.js'></script>
+    <script src='./js/libs/ember-1.7.0.js'></script>
+    <script src='./js/app.js'></script>
+    <title>Chris Thorsen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href='css/custom.css' rel='stylesheet' media='screen'>
+  </head>
+  <body>
+    <script type='text/x-handlebars' data-template-name='application'>
+      <div class="navbar">
+        <div class="navbar-inner">
+          <a class="brand" href="#">Chris Thorsen</a>
+          <ul class="nav">
+            {{#view App.NavView}}
+            {{#link-to 'index'}}Home{{/link-to}}
+            {{/view}}
+            
+            {{#view App.NavView}}
+            {{#link-to 'projects'}}Projects{{/link-to}}
+            {{/view}}
+
+            {{#view App.NavView}}
+            {{#link-to 'education'}}Education{{/link-to}}
+            {{/view}}
+
+          </ul>
+        </div>
+      </div>
+      <div class='container'>
+        {{outlet}}
+      </div>
+      <div class='footer'>
+      </div>
+
+  </script>
+  </body>
+  <script type='text/x-handlebars' data-template-name='index'>
+    <div class='row'>
+      <div class='homepage-background'>
+      <div class='span9'>
+        <h1 class='chris-thorsen'>Chris Thorsen</h1>
+        <p class='mission-statement'> I want to join a collaborative Ruby on Rails development team in a growing company where I can both contribute to the team's success and continue to develop my skills. </p>
+      </div>
+    </div>
+  </div>
+  </script>
+  <script type='text/x-handlebars' data-template-name='education'>
+    <h1>Education</h1>
+    <h3> Metis </h3>
+    <ul>
+      <li> Built Ruby on Rails applications using error driven development </li>
+      <li> Collaborate using Git </li>
+      <li> Learned proper coding syntax techniques and refactoring principles </li>
+      <li> Utilize SOLID Object Oriented Design and clean code techniques </li>
+      <h5> Software/Tools </h5>
+      <li> Ruby on Rails </li>
+      <li> Javascript </li>
+      <li> AJAX </li>
+      <li> HTML </li>
+      <li> CSS </li>
+      <li> PostgreSQL </li>
+    </ul>
+    <h3> Marist College </h3>
+    <ul>
+      <li> Bachelor of Science, Applied Mathematics with a concentration in Economics </li>
+      <li> 4 year acadademic scholarship </li>
+      <li> 4 year baseball scholarship </li>
+    </ul>
+  </script>
+  <script type='text/x-handlebars' data-template-name='projects'>
+    <h1>Projects</h1>
+    <li class='project'> <a href='http://picturethis41.herokuapp.com/' class='project-title'> Face-charades: </a> Rails application where users can find friends online through Facebook and play "selfie charades". </li>
+    <li class='project'> <a href='http://facenovelr.herokuapp.com/;' class='project-title'> FaceNovelr: </a> a group-developed app built in Rails that mimics Facebook. Users can find friends, share photos, share thoughts, and live chat.</li>
+    <li class='project'> <a href='http://cla-craigstr.herokuapp.com/;' class='project-title'> Craigster: </a> a group-developed Rails application where users can participate in an online purchasing community.  </li>
+    <li class='project'> <a href='https://github.com/ChristopherThorsen/rock_paper_scissors' class='project-title'> Ye Old Rock Paper Scissors: </a> Super fun  </li>
+  </script>
+</html>

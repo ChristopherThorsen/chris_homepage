@@ -1,0 +1,40 @@
+.chris-thorsen {
+  font-size: 6em;
+  margin-top: 170px;
+  text-align: center;
+}
+
+.mission-statement {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+body {
+  background: #fffcf2;
+  height:100%;
+}
+
+img {
+  margin-top: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background:#fafafa;
+  border-top: solid #afb7c6 1px;
+ }
+
+ .project {
+   margin-top: 20px;
+ }
